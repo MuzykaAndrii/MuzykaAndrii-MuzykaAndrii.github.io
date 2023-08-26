@@ -1332,12 +1332,13 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #fff
+    color: #fff;
+    flex-wrap: wrap;
 }
 
 .work-request input[type="submit"] {
     width: 400px;
-    max-width: 100%;
+    max-width: 50%;
     line-height: 50px;
     font-size: 16px;
     font-weight: 700;
@@ -1401,20 +1402,34 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 60px
+    margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 
 .work-request--information .information-name,
-.work-request--information .information-email {
+.work-request--information .information-email,
+.work-request--information .information-phone {
     position: relative;
     width: 45%;
     height: 50px;
     font-size: 30px;
-    font-weight: 300
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.work-request--information .information-photos {
+    position: relative;
+    width: 45%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .work-request--information input[type="text"],
-.work-request--information input[type="email"] {
+.work-request--information input[type="email"],
+.work-request--information input[type="phone"],
+.work-request--information input[type="file"] {
     width: 100%;
     padding: 0 0 5px 0;
     background-color: transparent;
@@ -1424,7 +1439,8 @@ body {
 }
 
 .work-request--information input[type="text"]:focus,
-.work-request--information input[type="email"]:focus {
+.work-request--information input[type="email"]:focus,
+.work-request--information input[type="phone"]:focus {
     outline: none;
     background-color: #0c0c0c
 }
@@ -1494,9 +1510,17 @@ body {
     }
 
     .work-request--information .information-name,
-    .work-request--information .information-email {
+    .work-request--information .information-email,
+    .work-request--information .information-phone {
         height: 40px;
         font-size: 24px
+    }
+
+    .work-request--information .information-email,
+    .work-request--information .information-name,
+    .work-request--information .information-phone,
+    .work-request--information .information-photos {
+        width: 100%;
     }
 }
 

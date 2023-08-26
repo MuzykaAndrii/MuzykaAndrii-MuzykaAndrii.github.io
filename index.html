@@ -18,7 +18,7 @@
   <!-- notification for small viewports and landscape oriented smartphones -->
   <div class="device-notification">
     <a class="device-notification--logo" href="#0">
-      <img src="assets/img/logo.png" alt="Global">
+      <img class="nav-logo" src="assets/img/logo.png" alt="Global">
       <p>Clisto Company</p>
     </a>
     <p class="device-notification--message">Global has so much to offer that we must request you orient your device to
@@ -431,7 +431,6 @@
             <li class="l-section section">
               <div class="hire">
                 <h2>You want us to do</h2>
-                <!-- checkout formspree.io for easy form setup -->
                 <form class="work-request">
                   <div class="work-request--information">
                     <div class="information-name">
@@ -441,6 +440,15 @@
                     <div class="information-email">
                       <input id="email" type="email" spellcheck="false">
                       <label for="email">Email</label>
+                    </div>
+                    <div class="information-phone">
+                      <input id="phone" type="phone" spellcheck="false">
+                      <label for="phone">Phone</label>
+                    </div>
+                    <div class="information-photos">
+                      <div>Car photos</div>
+                      <input id="photos" type="file" spellcheck="false" multiple>
+                      <!-- <label for="photos">Car photo</label> -->
                     </div>
                   </div>
                   <input type="submit" value="Send Request">
