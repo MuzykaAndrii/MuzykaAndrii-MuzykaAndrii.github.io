@@ -1369,46 +1369,6 @@ body {
     margin: 30px 0
 }
 
-.work-request--options .options-a {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.work-request--options .options-b {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 72%;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around
-}
-
-.work-request--options label {
-    display: block;
-    width: 200px;
-    margin-bottom: 30px;
-    line-height: 50px;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    border: 2px solid #fff;
-    cursor: pointer;
-    -webkit-transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
-    transition: background-color .2s ease-in-out, border-color .2s ease-in-out
-}
-
 .work-request--options label svg {
     position: relative;
     left: -5px;
@@ -1764,4 +1724,9 @@ body {
 
 .subcat-icon-container i {
     color: #fff;
+}
+
+.nav-logo {
+    width: 200px;
+    object-fit: cover;
 }
