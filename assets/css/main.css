@@ -1762,3 +1762,51 @@ body {
 .cat-btn:hover {
     background-color: #282828;
 }
+
+@media (max-width: 767px) {
+    .subcat-item {
+        width: calc(33% - 10px);
+    }
+
+    .subcat-header {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 697px) {
+    .category {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subcats {
+        display: flex;
+        flex-direction: row;
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .subcat-items {
+        width: 100%;
+    }
+}
+
+@media (max-width: 468px) {
+    .subcat-header {
+        font-size: 10px;
+    }
+
+    .subcat-item {
+        padding: 10px 7px;
+    }
+
+    .fa-xl {
+        font-size: 1.1em !important;
+    }
+
+    .cat-btn {
+        font-size: 12px;
+    }
+}
