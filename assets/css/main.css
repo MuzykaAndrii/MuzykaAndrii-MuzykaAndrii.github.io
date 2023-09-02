@@ -1793,6 +1793,12 @@ body {
     }
 }
 
+@media (max-width: 534px) {
+    .category-heading {
+        font-size: 20px !important;
+    }
+}
+
 @media (max-width: 468px) {
     .subcat-header {
         font-size: 10px;
