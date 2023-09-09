@@ -51,6 +51,14 @@ $( document ).ready(function() {
 
   });
 
+  $('.nav-logo').click(function() {
+    // Change the current page to the first page
+    let lastItem = $(this).parent().children().length - 1;
+    updateNavs(3); // Set the first item as active in the navigation
+    updateContent(lastItem, 3, lastItem); // Update the content accordingly
+  });
+
+
   $('.cta').click(function(){
 
     var curActive = $('.side-nav').find('.is-active'),
